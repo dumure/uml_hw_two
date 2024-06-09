@@ -1,0 +1,19 @@
+﻿<Window x:Class="uml_hw_two.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:uml_hw_two"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="300">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Выберите файл для загрузки на диск" />
+            <Button Name="selectFileButton" Content="Выбрать файл. . ." Click="selectFileButton_Click" Margin="0,10,0,0"/>
+            <TextBlock Name="fileTextBlock" Margin="0,10,0,0"/>
+            <Button Name="uploadButton" Content="Отправить" Click="uploadButton_Click" Margin="0,10,0,0"/>
+            <TextBlock Text="Введите токен доступа DropBox:" Margin="0,20,0,0"/>
+            <TextBox Name="accessTokenTextBox" Margin="0,10,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>
